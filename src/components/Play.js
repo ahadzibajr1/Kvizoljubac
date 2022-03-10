@@ -1,7 +1,7 @@
 import { useState, useEffect} from 'react'
 import { Link, useLocation } from 'react-router-dom'
 
-import {QuizCardCollection} from '../ui-components'
+
 const Play = ({fetchQuizzes}) => {
     const [quizzes,updateQuizzes] = useState([])
     const location = useLocation()
@@ -96,7 +96,7 @@ const Play = ({fetchQuizzes}) => {
                 <h1  key={index}>{q.title}</h1>
             ))}
 
-            <QuizCardCollection></QuizCardCollection>
+            
         </div>
         
     </div>

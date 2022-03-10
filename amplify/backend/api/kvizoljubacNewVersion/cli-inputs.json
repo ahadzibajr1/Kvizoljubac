@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "serviceConfiguration": {
+    "apiName": "kvizoljubacNewVersion",
+    "serviceName": "AppSync",
+    "gqlSchemaPath": "C:\\Users\\TNG\\Desktop\\Diplomski\\kvizoljubac\\amplify\\backend\\api\\kvizoljubacNewVersion\\schema.graphql",
+    "defaultAuthType": {
+      "mode": "AMAZON_COGNITO_USER_POOLS",
+      "cognitoUserPoolId": "authkvizoljubacNewAuth"
+    }
+  }
+}

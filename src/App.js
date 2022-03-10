@@ -4,7 +4,7 @@ import { useEffect, useReducer } from 'react';
 
 import { API, graphqlOperation, Amplify, Auth } from 'aws-amplify'
 import { withAuthenticator } from '@aws-amplify/ui-react';
-import { listQuizzes as ListQuizzes } from './graphql/queries'
+import { listQuizzes as ListQuizzes, listUsers as ListUsers } from './graphql/queries'
 import '@aws-amplify/ui-react/styles.css';
 
 import Header from './components/Header'
@@ -96,13 +96,18 @@ function App({ signOut, user }) {
     
   }
   
+  useEffect(async ()=> {
+    const korisnici = await API.graphql(graphqlOperation(ListUsers))
+    console.log(korisnici.data.listUsers.items)
+    
+  }, [] )
    
   
   return (
         <Router>
           <div className="App">
             <button onClick={signOut}>Sign out</button>
-            <Header/>
+            <Header user={user} signOut={signOut}/>
             <Routes>
             <Route path="/" exact render = {(props)=>(
                 <></>
