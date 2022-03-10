@@ -4,12 +4,19 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+import { Amplify, API, graphqlOperation } from 'aws-amplify';
+import awsconfig from './aws-exports';
+import { AmplifyProvider } from '@aws-amplify/ui-react'
+Amplify.configure(awsconfig);
+
 ReactDOM.render(
-  <React.StrictMode>
+  <AmplifyProvider>
     <App />
-  </React.StrictMode>,
+  </AmplifyProvider>,
   document.getElementById('root')
 );
+
+
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
