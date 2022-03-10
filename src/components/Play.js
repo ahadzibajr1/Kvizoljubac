@@ -13,37 +13,30 @@ const Play = ({fetchQuizzes}) => {
                 case '/play/science':
                     fetched = await fetchQuizzes('science')
                     updateQuizzes(fetched)
-                    console.log(fetched)
                 break
                 case '/play/history':
                     fetched = await fetchQuizzes('history')
                     updateQuizzes(fetched)
-                    console.log(fetched)
                 break
                 case '/play/geography':
                     fetched = await fetchQuizzes('geography')
                     updateQuizzes(fetched)
-                    console.log(fetched)
                 break
                 case '/play/film':
                     fetched = await fetchQuizzes('film')
                     updateQuizzes(fetched)
-                    console.log(fetched)
                 break
                 case '/play/music':
                     fetched = await fetchQuizzes('music')
                     updateQuizzes(fetched)
-                    console.log(fetched)
                 break
                 case '/play/sport':
                     fetched = await fetchQuizzes('sport')
                     updateQuizzes(fetched)
-                    console.log(fetched)
                 break
                 case '/play/other':
                     fetched = await fetchQuizzes('other')
                     updateQuizzes(fetched)
-                    console.log(fetched)
                 break
             
             }

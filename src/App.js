@@ -96,11 +96,6 @@ function App({ signOut, user }) {
     
   }
   
-  useEffect(async ()=> {
-    const korisnici = await API.graphql(graphqlOperation(ListUsers))
-    console.log(korisnici.data.listUsers.items)
-    
-  }, [] )
    
   
   return (
