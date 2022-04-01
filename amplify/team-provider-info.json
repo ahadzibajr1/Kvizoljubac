@@ -19,7 +19,7 @@
       "function": {
         "kvizoljubacNewAuthPostConfirmation": {
           "deploymentBucketName": "amplify-kvizoljubac-staging-203541-deployment",
-          "s3Key": "amplify-builds/kvizoljubacNewAuthPostConfirmation-4d4c76716c505a424d36-build.zip"
+          "s3Key": "amplify-builds/kvizoljubacNewAuthPostConfirmation-6b6858626f634355644a-build.zip"
         }
       }
     }

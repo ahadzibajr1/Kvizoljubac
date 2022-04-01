@@ -26,6 +26,7 @@ exports.handler = async (event, context) => {
                 'score': {N: '0'},
                 'email': {S: event.request.userAttributes.email},
                 'createdAt': {S: date.toISOString()},
+                'updatedAt': {S: date.toISOString()},
             },
             TableName: tableName
         };
