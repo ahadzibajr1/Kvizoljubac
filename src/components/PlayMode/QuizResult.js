@@ -1,14 +1,15 @@
 import { useEffect } from "react"
-import { useNavigate} from "react-router-dom"
+import { Navigate, useNavigate} from "react-router-dom"
 import QuizPlayMode from "./QuizPlayMode"
 
 
-const QuizResult = ({score, handleResult}) => {
-  
+const QuizResult = ({score, handleResult,id}) => {
+  const navigate = useNavigate()
   
   function replay() {
-      window.location.reload()
+      
       //restartQuiz(score.points)
+      window.location.href = window.location.href;
   }
 
     useEffect(()=> {

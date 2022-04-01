@@ -110,7 +110,7 @@ const QuizPlayMode = ({getQuiz,getPlayedQuiz,createPlayedQuiz, updatePlayedQuiz}
             return loaded && <QuizInfoPlayCard quiz={quiz} playedQuiz={playedQuiz} playQuiz={playQuiz}/>
         break
         case(100):
-            return <QuizResult quiz={quiz} score={score} handleResult={handleResult} />
+            return <QuizResult quiz={quiz} score={score} id={id} handleResult={handleResult} />
         default:
             return <QuestionPlayCard numberOfQuestions={quiz.questions.items.length} question={questions[step-1]} handleAnswer={handleAnswer} endQuiz={endQuiz}/>
 
